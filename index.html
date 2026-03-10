@@ -42,26 +42,30 @@
         </div>
 
         <div class="hidden md:flex items-center space-x-10 text-xs uppercase tracking-[0.2em]">
-            <a href="#beranda" class="hover:text-[#C5A059] transition text-stone-300">Beranda</a>
-            <a href="#jadwal" class="hover:text-[#C5A059] transition text-stone-300">Jadwal</a>
-            <a href="#galeri-carousel" class="hover:text-[#C5A059] transition text-stone-300">Galeri</a>
-            <a href="#video" class="hover:text-[#C5A059] transition text-stone-300">Video</a>
-            <a href="#pemesanan" class="px-5 py-2 border border-[#C5A059] text-[#C5A059] hover:bg-[#C5A059] hover:text-black transition duration-300">Pemesanan</a>
-            <a href="konfirmasi_pembayaran.html" class="px-5 py-2 border border-[#C5A059] text-[#C5A059] hover:bg-[#C5A059] hover:text-black transition duration-300">Konfirmasi</a>
-            <a href="pratinjau_tiket.html" class="px-5 py-2 border border-[#C5A059] text-[#C5A059] hover:bg-[#C5A059] hover:text-black transition duration-300">E-Ticket</a>
+            <a href="#beranda" class="hover:text-[#C5A059] transition text-stone-300">Home</a>
+            <a href="#tentang-event" class="hover:text-[#C5A059] transition text-stone-300">Event</a>
+            <a href="#tentang-kami" class="hover:text-[#C5A059] transition text-stone-300">Story</a>
+            <a href="#galeri" class="hover:text-[#C5A059] transition text-stone-300">Gallery</a>
+            <a href="#video" class="hover:text-[#C5A059] transition text-stone-300">Highlights</a>
+            <!-- <a href="#connect" class="hover:text-[#C5A059] transition text-stone-300">Connect</a> -->
+            <a href="#pemesanan" class="px-5 py-2 border border-[#C5A059] text-[#C5A059] hover:bg-[#C5A059] hover:text-black transition duration-300">Order</a>
+            <!-- <a href="konfirmasi_pembayaran.html" class="px-5 py-2 border border-[#C5A059] text-[#C5A059] hover:bg-[#C5A059] hover:text-black transition duration-300">Konfirmasi</a>
+            <a href="pratinjau_tiket.html" class="px-5 py-2 border border-[#C5A059] text-[#C5A059] hover:bg-[#C5A059] hover:text-black transition duration-300">E-Ticket</a> -->
         </div>
     </div>
 
     <div id="mobile-menu" class="hidden fixed inset-0 h-screen w-screen bg-[#0f0f0f] z-[200] flex flex-col items-center justify-center space-y-10 opacity-0 transition-opacity duration-300">
-        <a href="#beranda" class="mobile-link text-2xl font-serif tracking-[0.3em] text-stone-300 hover:text-[#C5A059]">BERANDA</a>
-        <a href="#jadwal" class="mobile-link text-2xl font-serif tracking-[0.3em] text-stone-300 hover:text-[#C5A059]">JADWAL</a>
-        <a href="#galeri-carousel" class="mobile-link text-2xl font-serif tracking-[0.3em] text-stone-300 hover:text-[#C5A059]">Video</a>
-        <a href="#video" class="mobile-link text-2xl font-serif tracking-[0.3em] text-stone-300 hover:text-[#C5A059]">Galeri</a>
-        <a href="konfirmasi_pembayaran.html" class="mobile-link text-2xl font-serif tracking-[0.3em] text-stone-300 hover:text-[#C5A059]">Konfirmasi</a>
-        <a href="pratinjau_tiket.html" class="mobile-link text-2xl font-serif tracking-[0.3em] text-stone-300 hover:text-[#C5A059]">E-Ticket</a>
+        <a href="#beranda" class="mobile-link text-2xl font-serif tracking-[0.3em] text-stone-300 hover:text-[#C5A059]">HOME</a>
+        <a href="#tentang-event" class="mobile-link text-2xl font-serif tracking-[0.3em] text-stone-300 hover:text-[#C5A059]">EVENT</a>
+        <a href="#tentang-kami" class="mobile-link text-2xl font-serif tracking-[0.3em] text-stone-300 hover:text-[#C5A059]">STORY</a>
+        <a href="#galeri" class="mobile-link text-2xl font-serif tracking-[0.3em] text-stone-300 hover:text-[#C5A059]">GALLERY</a>
+        <a href="#video" class="mobile-link text-2xl font-serif tracking-[0.3em] text-stone-300 hover:text-[#C5A059]">HIGHLIGHTS</a>
+        <!-- <a href="#connect" class="mobile-link text-2xl font-serif tracking-[0.3em] text-stone-300 hover:text-[#C5A059]">CONNECT</a> -->
+        <!-- <a href="konfirmasi_pembayaran.html" class="mobile-link text-2xl font-serif tracking-[0.3em] text-stone-300 hover:text-[#C5A059]">Konfirmasi</a>
+        <a href="pratinjau_tiket.html" class="mobile-link text-2xl font-serif tracking-[0.3em] text-stone-300 hover:text-[#C5A059]">E-Ticket</a> -->
         
         <div class="pt-6">
-            <a href="#pemesanan" class="mobile-link px-10 py-4 border border-[#C5A059] text-[#C5A059] text-sm uppercase tracking-widest">Pesan Tiket Sekarang</a>
+            <a href="#pemesanan" class="mobile-link px-10 py-4 border border-[#C5A059] text-[#C5A059] text-sm uppercase tracking-widest">Order</a>
         </div>
     </div>
 </nav>
@@ -105,62 +109,283 @@
             });
         });
     </script>
-<header id="beranda" class="relative h-screen flex flex-col items-center justify-center text-center overflow-hidden">
+    <header id="beranda" class="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden py-20">
   <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-30"></div>
-  <div class="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] via-transparent to-transparent"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] via-transparent to-[#0f0f0f]/50"></div>
   
-  <div class="relative z-10 px-4">
-    <span class="block uppercase tracking-[0.5em] text-[#C5A059] mb-4 text-sm">Symphony of the Souls</span>
-    <h1 class="text-6xl md:text-8xl mb-6">Malam Simfoni <br> <span class="italic text-[#F7E7CE]">Surgawi</span></h1>
-    <p class="max-w-2xl mx-auto text-stone-400 text-lg mb-8 font-light italic">
-      "Sebuah persembahan suara yang menyatukan hati, menghidupkan kembali mahakarya klasik dalam kemegahan auditorium utama."
-    </p>
-    <div class="flex flex-col md:flex-row justify-center gap-4 mb-12">
-      <button class="gold-gradient text-black px-10 py-4 font-bold uppercase tracking-tighter hover:scale-105 transition">Pesan Kursi Anda</button>
+  <div class="relative z-10 px-4 max-w-5xl mx-auto">
+    <span class="block uppercase tracking-[0.5em] text-[#C5A059] mb-4 text-sm md:text-base animate-pulse">Carmen Divina:</span>
+    <h1 class="text-5xl md:text-8xl mb-8 leading-tight">
+      <span class="italic font-serif text-[#F7E7CE]">A Decade</span> of Divine <br> 
+      <span class="font-serif">Harmony</span>
+    </h1>
+
+    <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-base md:text-xl border-y border-white/10 py-6 mb-10">
+      <span class="text-white font-light italic">Saturday, 1 August 2026</span>
+      <span class="hidden md:inline text-stone-600">|</span>
+      <span class="text-[#C5A059] font-medium">18:30</span>
+      <span class="hidden md:inline text-stone-600">|</span>
+      <span class="text-stone-300 font-light">Balai Resital Kertanegara</span>
     </div>
 
-    <!-- Countdown di dalam hero -->
-    <div class="max-w-4xl mx-auto bg-[#1c1c1c]/90 backdrop-blur-xl border border-stone-800 p-8 shadow-[0_20px_50px_rgba(0,0,0,0.5)]" data-aos="zoom-in">
-      <div class="grid grid-cols-4 gap-4 text-center">
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-5 mb-16">
+      <button class="gold-gradient w-full sm:w-auto text-black px-10 py-4 font-bold uppercase tracking-widest hover:scale-105 transition-all duration-300 shadow-xl shadow-[#C5A059]/20 text-sm">
+        Pesan Kursi Anda
+      </button>
+      <button class="w-full sm:w-auto border border-[#C5A059] text-[#C5A059] px-10 py-4 font-bold uppercase tracking-widest hover:bg-[#C5A059] hover:text-black transition-all duration-300 text-sm">
+        YouTube
+      </button>
+    </div>
+
+    <div class="max-w-2xl mx-auto bg-black/40 backdrop-blur-md border border-white/5 p-6 rounded-sm shadow-2xl" data-aos="fade-up">
+      <div class="grid grid-cols-4 gap-2 md:gap-4 text-center">
         <div class="flex flex-col">
-          <span id="days" class="text-3xl md:text-5xl font-serif text-[#C5A059]">00</span>
-          <span class="text-[10px] uppercase tracking-[0.2em] text-stone-500 mt-2">Hari</span>
+          <span id="days" class="text-2xl md:text-4xl font-serif text-[#C5A059]">00</span>
+          <span class="text-[9px] uppercase tracking-widest text-stone-400 mt-1">Hari</span>
         </div>
-        <div class="flex flex-col border-l border-stone-800">
-          <span id="hours" class="text-3xl md:text-5xl font-serif text-[#C5A059]">00</span>
-          <span class="text-[10px] uppercase tracking-[0.2em] text-stone-500 mt-2">Jam</span>
+        <div class="flex flex-col border-l border-white/10">
+          <span id="hours" class="text-2xl md:text-4xl font-serif text-[#C5A059]">00</span>
+          <span class="text-[9px] uppercase tracking-widest text-stone-400 mt-1">Jam</span>
         </div>
-        <div class="flex flex-col border-l border-stone-800">
-          <span id="minutes" class="text-3xl md:text-5xl font-serif text-[#C5A059]">00</span>
-          <span class="text-[10px] uppercase tracking-[0.2em] text-stone-500 mt-2">Menit</span>
+        <div class="flex flex-col border-l border-white/10">
+          <span id="minutes" class="text-2xl md:text-4xl font-serif text-[#C5A059]">00</span>
+          <span class="text-[9px] uppercase tracking-widest text-stone-400 mt-1">Menit</span>
         </div>
-        <div class="flex flex-col border-l border-stone-800">
-          <span id="seconds" class="text-3xl md:text-5xl font-serif text-[#C5A059]">00</span>
-          <span class="text-[10px] uppercase tracking-[0.2em] text-stone-500 mt-2">Detik</span>
+        <div class="flex flex-col border-l border-white/10">
+          <span id="seconds" class="text-2xl md:text-4xl font-serif text-[#C5A059]">00</span>
+          <span class="text-[9px] uppercase tracking-widest text-stone-400 mt-1">Detik</span>
         </div>
       </div>
     </div>
   </div>
 </header>
 
-    
-
-    <section id="jadwal" class="py-24 px-6 bg-[#161616]" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-12 text-center">
-            <div>
-                <h3 class="text-[#C5A059] text-xl mb-2 font-serif">Waktu</h3>
-                <p class="text-stone-400">Sabtu, 15 Mei 2026<br>19:00 - Selesai</p>
-            </div>
-            <div>
-                <h3 class="text-[#C5A059] text-xl mb-2 font-serif">Lokasi</h3>
-                <p class="text-stone-400">Gedung Kesenian Jakarta<br>Auditorium Utama, Jakarta</p>
-            </div>
-            <div>
-                <h3 class="text-[#C5A059] text-xl mb-2 font-serif">Konduktor</h3>
-                <p class="text-stone-400">Maestro Angga<br>& 80 Anggota Choir</p>
+<!-- <section id="jadwal" class="py-16 md:py-24 px-6 bg-[#161616]" data-aos="fade-up" data-aos-duration="1000">
+    <div class="max-w-5xl mx-auto border-y border-stone-800 py-12 md:py-16">
+        
+        <div class="flex flex-col items-center text-center space-y-6">
+            <h3 class="text-[#C5A059] text-xl md:text-2xl font-serif tracking-[0.3em] uppercase">
+                Event Schedule
+            </h3>
+            
+            <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-lg md:text-2xl">
+                <span class="text-white font-light italic tracking-wide">Saturday, 1 August 2026</span>
+                <span class="hidden md:inline text-stone-600">|</span>
+                <span class="text-[#C5A059] font-medium">18:30</span>
+                <span class="hidden md:inline text-stone-600">|</span>
+                <span class="text-stone-300 font-light tracking-wide">Balai Resital Kertanegara</span>
             </div>
         </div>
-    </section>
+
+        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-5 w-full">
+            <button class="gold-gradient w-full sm:w-auto text-black px-12 py-4 font-bold uppercase tracking-widest hover:scale-105 transition-all duration-300 shadow-xl shadow-[#C5A059]/20">
+                Pesan Kursi Anda
+            </button>
+            
+            <button class="w-full sm:w-auto border-2 border-[#C5A059] text-[#C5A059] px-12 py-4 font-bold uppercase tracking-widest hover:bg-[#C5A059] hover:text-black transition-all duration-300">
+                YouTube
+            </button>
+        </div>
+
+        <div class="max-w-3xl mx-auto mt-16 bg-[#1c1c1c]/90 backdrop-blur-xl border border-stone-800 p-8 shadow-[0_20px_50px_rgba(0,0,0,0.5)]" data-aos="zoom-in">
+            <div class="grid grid-cols-4 gap-4 text-center">
+                <div class="flex flex-col">
+                    <span id="days" class="text-3xl md:text-5xl font-serif text-[#C5A059]">00</span>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-stone-500 mt-2">Hari</span>
+                </div>
+                <div class="flex flex-col border-l border-stone-800">
+                    <span id="hours" class="text-3xl md:text-5xl font-serif text-[#C5A059]">00</span>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-stone-500 mt-2">Jam</span>
+                </div>
+                <div class="flex flex-col border-l border-stone-800">
+                    <span id="minutes" class="text-3xl md:text-5xl font-serif text-[#C5A059]">00</span>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-stone-500 mt-2">Menit</span>
+                </div>
+                <div class="flex flex-col border-l border-stone-800">
+                    <span id="seconds" class="text-3xl md:text-5xl font-serif text-[#C5A059]">00</span>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-stone-500 mt-2">Detik</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section> -->
+
+<!-- <section id="tentang-event" class="py-24 px-6 bg-[#0f0f0f] relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-64 h-64 bg-[#C5A059]/5 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2"></div>
+    
+    <div class="max-w-4xl mx-auto relative z-10">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <span class="text-[#C5A059] uppercase tracking-[0.4em] text-sm mb-4 block">The Recital</span>
+            <h2 class="text-4xl md:text-6xl font-serif text-[#F7E7CE] leading-tight">
+                A Decade of <br> Divine Harmony
+            </h2>
+            <div class="w-20 h-px bg-[#C5A059] mx-auto mt-8 opacity-50"></div>
+        </div>
+
+        <div class="grid md:grid-cols-1 gap-10 text-stone-300 leading-relaxed tracking-wide text-lg md:text-xl font-light">
+            <p data-aos="fade-up" data-aos-delay="100">
+                <span class="text-[#C5A059] font-serif italic text-2xl">Carmen Divina: A Decade of Divine Harmony</span> 
+                is a thanksgiving recital celebrating 10 years of Carmen Divina’s journey in music and service.
+            </p>
+            
+            <p data-aos="fade-up" data-aos-delay="200">
+                This special evening brings together choral works, instrumental music, and brief moments of reflection that recount the people, stories, and experiences that have shaped the choir over the past decade. The repertoire draws inspiration from sacred and wedding music that has accompanied many meaningful celebrations throughout the years.
+            </p>
+
+            <blockquote class="border-l-2 border-[#C5A059]/30 pl-8 py-2 italic text-stone-400" data-aos="fade-up" data-aos-delay="300">
+                Designed as an intimate and reflective recital, the event invites audiences not only to listen, but to share in a moment of gratitude. Let’s celebrate music, community, and the quiet beauty of harmony.
+            </blockquote>
+        </div>
+        
+        <div class="flex justify-center mt-16 opacity-30" data-aos="fade-up">
+             <div class="flex gap-2">
+                 <div class="w-1.5 h-1.5 rounded-full bg-[#C5A059]"></div>
+                 <div class="w-1.5 h-1.5 rounded-full bg-[#C5A059]"></div>
+                 <div class="w-1.5 h-1.5 rounded-full bg-[#C5A059]"></div>
+             </div>
+        </div>
+    </div>
+</section> -->
+
+<section id="tentang-event" class="py-24 px-6 bg-[#0f0f0f] relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-[#C5A059]/5 rounded-full blur-[120px] translate-x-1/2 -translate-y-1/2"></div>
+    
+    <div class="max-w-4xl mx-auto relative z-10">
+        <div class="text-center mb-20" data-aos="fade-up">
+            <span class="text-[#C5A059] uppercase tracking-[0.5em] text-xs md:text-sm mb-4 block font-medium">The Recital</span>
+            <h2 class="text-4xl md:text-6xl font-serif text-[#F7E7CE] leading-tight">
+                A Decade of <br> 
+                <span class="italic">Divine Harmony</span>
+            </h2>
+            <div class="flex items-center justify-center gap-4 mt-8">
+                <div class="w-12 h-px bg-gradient-to-r from-transparent to-[#C5A059]/50"></div>
+                <div class="w-2 h-2 rotate-45 border border-[#C5A059]"></div>
+                <div class="w-12 h-px bg-gradient-to-l from-transparent to-[#C5A059]/50"></div>
+            </div>
+        </div>
+
+        <div class="space-y-12 text-center md:text-left">
+            <p class="text-lg md:text-xl text-stone-300 leading-relaxed tracking-wide font-light" data-aos="fade-up">
+                <span class="text-[#C5A059] font-serif italic text-2xl">Carmen Divina: A Decade of Divine Harmony</span> is a thanksgiving recital celebrating 10 years of Carmen Divina’s journey in music and service.
+            </p>
+            
+            <div class="grid md:grid-cols-5 gap-8 items-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="md:col-span-3 text-stone-400 text-lg leading-relaxed space-y-6">
+                    <p>
+                        This special evening brings together choral works, instrumental music, and brief moments of reflection that recount the people, stories, and experiences that have shaped the choir over the past decade.
+                    </p>
+                    <p>
+                        The repertoire draws inspiration from sacred and wedding music that has accompanied many meaningful celebrations throughout the years.
+                    </p>
+                </div>
+                <div class="hidden md:flex md:col-span-2 justify-center">
+                    <div class="w-px h-32 bg-gradient-to-b from-[#C5A059]/50 via-stone-800 to-transparent"></div>
+                </div>
+            </div>
+
+            <div class="pt-10" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-[#161616] p-8 md:p-12 border border-stone-800 relative">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#0f0f0f] px-4 text-[#C5A059] text-4xl font-serif">“</div>
+                    
+                    <p class="text-stone-300 italic text-xl md:text-2xl leading-relaxed text-center font-light">
+                        Designed as an intimate and reflective recital, the event invites audiences not only to listen, but to share in a moment of gratitude. Let’s celebrate music, community, and the quiet beauty of harmony.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section id="galeri" class="py-12 px-6 bg-[#0f0f0f]">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="col-span-2 row-span-2 overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?auto=format&fit=crop&q=80" 
+                     alt="Rehearsal 1" 
+                     class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700 ease-in-out transform group-hover:scale-110">
+            </div>
+            
+            <div class="overflow-hidden group aspect-square">
+                <img src="https://images.unsplash.com/photo-1459749411177-042180ce673c?auto=format&fit=crop&q=80" 
+                     alt="Rehearsal 2" 
+                     class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700 transform group-hover:scale-110">
+            </div>
+            
+            <div class="overflow-hidden group aspect-square">
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80" 
+                     alt="Performance" 
+                     class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700 transform group-hover:scale-110">
+            </div>
+            
+            <div class="col-span-2 overflow-hidden group h-48 md:h-64">
+                <img src="https://images.unsplash.com/photo-1526218626217-dc65a29bb444?auto=format&fit=crop&q=80" 
+                     alt="Memories" 
+                     class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700 transform group-hover:scale-110">
+            </div>
+        </div>
+        
+        <p class="text-center text-stone-500 text-xs md:text-sm mt-8 tracking-widest uppercase">
+            Glimpses of a decade: 2016 — 2026
+        </p>
+    </div>
+</section> -->
+
+<section id="tentang-kami" class="py-24 px-6 bg-[#161616]">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            
+            <div class="relative" data-aos="fade-right">
+                <div class="aspect-[4/5] overflow-hidden rounded-sm">
+                    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&q=80" 
+                         alt="Carmen Divina Ensemble" 
+                         class="w-full h-full object-cover opacity-80">
+                </div>
+                <div class="absolute -bottom-6 -right-6 w-full h-full border-2 border-[#C5A059]/30 -z-10"></div>
+                
+                <div class="absolute top-8 left-8 bg-[#C5A059] text-black p-6 shadow-2xl">
+                    <p class="text-4xl font-serif font-bold">10</p>
+                    <p class="text-xs uppercase tracking-widest font-bold">Years of Service</p>
+                </div>
+            </div>
+
+            <div class="space-y-8" data-aos="fade-left">
+                <div class="space-y-2">
+                    <span class="text-[#C5A059] uppercase tracking-[0.3em] text-sm font-semibold">Our Story</span>
+                    <h2 class="text-4xl md:text-5xl font-serif text-[#F7E7CE]">The Soul Behind <br> the Harmony</h2>
+                </div>
+
+                <div class="space-y-6 text-stone-400 leading-relaxed text-lg font-light">
+                    <p>
+                        Carmen Divina is a vocal ensemble founded in 2015 with a shared desire to offer meaningful and reverent music for sacred celebrations, especially weddings. What began as a small group of five individuals has grown into a dedicated community of singers and musicians united by a love for music and a spirit of service.
+                    </p>
+                    
+                    <p class="text-stone-300">
+                        True to its name — <span class="text-[#C5A059] italic">Divine Song</span> — Carmen Divina approaches every celebration not merely as a performance, but as an offering. Known for its light, bright, and resonant choral sound, the ensemble seeks to create moments of warmth, reflection, and beauty through carefully crafted harmonies.
+                    </p>
+
+                    <p>
+                        Over the years, Carmen Divina has been entrusted with many meaningful moments at the beginning of many couple’s shared journeys. Guided by sincerity, professionalism, and attentiveness to each ceremony, the ensemble continues to serve with care, humility, and heart.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 pt-6 border-t border-stone-800">
+                    <div class="text-center">
+                        <span class="block text-[#C5A059] font-serif text-xl">Sincerity</span>
+                    </div>
+                    <div class="text-center border-x border-stone-800">
+                        <span class="block text-[#C5A059] font-serif text-xl">Professionalism</span>
+                    </div>
+                    <div class="text-center">
+                        <span class="block text-[#C5A059] font-serif text-xl">Heart</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 
     <section id="galeri" class="py-24 bg-[#0f0f0f] overflow-hidden">
     <div class="max-w-7xl mx-auto px-6">
@@ -456,7 +681,7 @@
 </section> -->
 
 
-    <section id="pemesanan" class="py-24 px-6 relative" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+   <!--  <section id="pemesanan" class="py-24 px-6 relative" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
         <div class="max-w-4xl mx-auto bg-[#1c1c1c] border border-stone-800 p-8 md:p-16 shadow-2xl relative overflow-hidden">
             <div class="absolute top-0 right-0 w-32 h-32 bg-[#C5A059] opacity-5 -mr-16 -mt-16 rounded-full"></div>
             
@@ -485,7 +710,7 @@
                 <div>
                     <label class="block text-xs uppercase tracking-widest text-stone-500 mb-2">Jumlah Tiket</label>
                     <input type="number" class="w-full bg-[#252525] border border-stone-700 p-3 focus:border-[#C5A059] outline-none transition" placeholder="Masukkan jumlah tiket...">
-                    <!-- <select class="w-full block bg-[#252525] border border-stone-700 p-3 focus:border-[#C5A059] outline-none transition box-border h-[50px]"> -->
+                     --><!-- <select class="w-full block bg-[#252525] border border-stone-700 p-3 focus:border-[#C5A059] outline-none transition box-border h-[50px]"> -->
             
                     <!-- <label class="block text-xs uppercase tracking-widest text-stone-500 mb-2">Jumlah Tiket</label>
                     <select class="w-full bg-[#252525] border border-stone-700 p-3 focus:border-[#C5A059] outline-none transition">
@@ -494,7 +719,7 @@
                         <option>2</option>
                         <option>3</option>
                     </select> -->
-                </div>
+                <!-- </div>
                 <div>
                     <label class="block text-xs uppercase tracking-widest text-stone-500 mb-2">Donasi (Opsional)</label>
                     <input type="number" class="w-full bg-[#252525] border border-stone-700 p-3 focus:border-[#C5A059] outline-none transition" placeholder="Masukkan nominal donasi...">
@@ -510,7 +735,7 @@
                 </div>
             </form>
         </div>
-    </section>
+    </section> -->
 
 
 
@@ -584,10 +809,74 @@
             
         </div>
     </section> -->
+    <!-- <section id="connect" class="py-20 px-6 bg-[#0f0f0f] border-t border-stone-900">
+    <div class="max-w-4xl mx-auto text-center">
+        <span class="text-[#C5A059] uppercase tracking-[0.4em] text-xs mb-4 block">Inquiries & Bookings</span>
+        <h2 class="text-3xl md:text-5xl font-serif text-[#F7E7CE] mb-8">Connect with Us</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 mt-12">
+            <a href="https://wa.me/yournumber" class="p-8 border border-stone-800 hover:border-[#C5A059]/50 transition duration-500 group">
+                <p class="text-stone-500 uppercase tracking-widest text-xs mb-2">Direct Message</p>
+                <p class="text-xl text-stone-200 group-hover:text-[#C5A059] transition">+62 812 3456 7890</p>
+            </a>
+            
+            <a href="mailto:hello@carmendivina.com" class="p-8 border border-stone-800 hover:border-[#C5A059]/50 transition duration-500 group">
+                <p class="text-stone-500 uppercase tracking-widest text-xs mb-2">Email Inquiry</p>
+                <p class="text-xl text-stone-200 group-hover:text-[#C5A059] transition">carmendivina.choir@gmail.com</p>
+            </a>
+        </div>
+    </div>
+</section> -->
 
-    <footer class="py-12 border-t border-stone-900 text-center">
+    <footer class="bg-[#0f0f0f] pt-20 pb-10 px-6 border-t border-stone-900">
+    <div class="max-w-6xl mx-auto flex flex-col items-center text-center">
+        
+        <h2 class="text-[#C5A059] text-3xl font-serif tracking-widest uppercase mb-4">
+            Carmen Divina Choir
+        </h2>
+        
+        <p class="text-stone-500 max-w-md mx-auto mb-10 font-light italic leading-relaxed">
+            Serving sacred celebrations through meaningful and reverent music since 2015.
+        </p>
+
+        <div class="flex items-center gap-8 mb-16">
+            <a href="#" class="group flex flex-col items-center gap-2">
+                <div class="w-12 h-12 rounded-full border border-stone-800 flex items-center justify-center group-hover:border-[#C5A059] transition-all duration-300">
+                    <span class="text-stone-400 group-hover:text-[#C5A059] text-sm">YT</span>
+                </div>
+                <span class="text-[10px] uppercase tracking-widest text-stone-600">YouTube</span>
+            </a>
+
+            <a href="#" class="group flex flex-col items-center gap-2">
+                <div class="w-12 h-12 rounded-full border border-stone-800 flex items-center justify-center group-hover:border-[#C5A059] transition-all duration-300">
+                    <span class="text-stone-400 group-hover:text-[#C5A059] text-sm">IG</span>
+                </div>
+                <span class="text-[10px] uppercase tracking-widest text-stone-600">Instagram</span>
+            </a>
+
+            <a href="#" class="group flex flex-col items-center gap-2">
+                <div class="w-12 h-12 rounded-full border border-stone-800 flex items-center justify-center group-hover:border-[#C5A059] transition-all duration-300">
+                    <span class="text-stone-400 group-hover:text-[#C5A059] text-sm">TT</span>
+                </div>
+                <span class="text-[10px] uppercase tracking-widest text-stone-600">TikTok</span>
+            </a>
+        </div>
+
+        <div class="w-full border-t border-stone-900 pt-10 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-stone-600 text-xs uppercase tracking-[0.2em]">
+                &copy; 2026 Carmen Divina Choir
+            </p>
+            <p class="text-stone-700 text-[10px] uppercase tracking-[0.3em] font-serif">
+                A Decade of Divine Harmony
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- <footer class="py-12 border-t border-stone-900 text-center">
         <p class="text-stone-600 text-sm tracking-widest uppercase">© 2026 Carmen Divina Choir. All Rights Reserved.</p>
-    </footer>
+    </footer> -->
 
     <button id="backToTop" class="fixed bottom-8 right-8 z-[100] bg-[#C5A059] text-black p-3 rounded-full shadow-2xl opacity-0 translate-y-10 transition-all duration-500 hover:bg-[#F7E7CE] hover:scale-110 focus:outline-none">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -624,7 +913,7 @@
     });
 
     // 2. Countdown Timer Logic
-    const targetDate = new Date("May 15, 2026 19:00:00").getTime();
+    const targetDate = new Date("August 1, 2026 18:30:00").getTime();
 
     const updateCountdown = setInterval(() => {
         const now = new Date().getTime();
@@ -703,5 +992,7 @@ lightbox.addEventListener('click', (e) => {
     if (e.target === lightbox) hideLightbox();
 });
 </script>
+
+
 </body>
 </html>
