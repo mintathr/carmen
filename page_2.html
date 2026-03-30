@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Carmen Divina</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .filter-btn.active {
+            background-color: #C5A059;
+            color: black;
+            border-color: #C5A059;
+        }
+    </style>
+</head>
+<body class="bg-[#0f0f0f] text-stone-200 overflow-x-hidden">
+
+    <nav class="p-4 md:p-6 border-b border-stone-800 backdrop-blur-md sticky top-0 z-[100] bg-[#0f0f0f]/90">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-lg md:text-2xl font-serif font-bold tracking-[0.1em] md:tracking-[0.2em] text-[#C5A059]">
+                CARMEN<span class="text-stone-100">DIVINA</span>
+            </a>
+            <a href="index.html" class="text-[10px] md:text-xs uppercase tracking-[0.1em] hover:text-[#C5A059] transition border border-stone-700 px-3 py-1.5 md:px-4 md:py-2">
+                Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <header class="py-12 md:py-20 px-6 text-center" data-aos="fade-down">
+        <span class="text-[#C5A059] uppercase tracking-[0.4em] text-[10px] md:text-xs mb-3 block">Voices of Harmony</span>
+        <h1 class="text-3xl md:text-6xl font-serif text-[#F7E7CE]">The <span class="italic text-white">Choir</span> Members</h1>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-6 mb-12 flex flex-wrap justify-center gap-2 md:gap-4" data-aos="fade-up">
+        <button class="filter-btn active px-4 py-1.5 border border-stone-700 text-[10px] md:text-xs uppercase tracking-widest transition-all" onclick="filterSelection('all')">All</button>
+        <button class="filter-btn px-4 py-1.5 border border-stone-700 text-[10px] md:text-xs uppercase tracking-widest transition-all" onclick="filterSelection('soprano')">Soprano</button>
+        <button class="filter-btn px-4 py-1.5 border border-stone-700 text-[10px] md:text-xs uppercase tracking-widest transition-all" onclick="filterSelection('alto')">Alto</button>
+        <button class="filter-btn px-4 py-1.5 border border-stone-700 text-[10px] md:text-xs uppercase tracking-widest transition-all" onclick="filterSelection('tenor')">Tenor</button>
+        <button class="filter-btn px-4 py-1.5 border border-stone-700 text-[10px] md:text-xs uppercase tracking-widest transition-all" onclick="filterSelection('bass')">Bass</button>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-4 md:px-6 pb-24">
+        <div id="gallery-container" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-8">
+            
+            <div class="member-card soprano" data-aos="fade-up">
+                <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
+                    <div class="aspect-[3/4] overflow-hidden bg-stone-800">
+                        <img src="img/liz_keen.jpeg" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                    </div>
+                    <div class="p-3 md:p-5">
+                        <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">Adeline S.</h3>
+                        <p class="text-[#C5A059] text-[8px] md:text-[10px] uppercase tracking-widest mt-0.5 md:mt-1 mb-2">Soprano</p>
+                        <p class="text-stone-400 text-[10px] md:text-sm font-light leading-relaxed line-clamp-2 md:line-clamp-none">Membawa kejernihan vokal sejak 2016.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="member-card soprano" data-aos="fade-up">
+                <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
+                    <div class="aspect-[3/4] overflow-hidden bg-stone-800">
+                        <img src="img/rr.jpeg" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                    </div>
+                    <div class="p-3 md:p-5">
+                        <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">Adeline S.</h3>
+                        <p class="text-[#C5A059] text-[8px] md:text-[10px] uppercase tracking-widest mt-0.5 md:mt-1 mb-2">Soprano</p>
+                        <p class="text-stone-400 text-[10px] md:text-sm font-light leading-relaxed line-clamp-2 md:line-clamp-none">Membawa kejernihan vokal sejak 2016.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="member-card soprano" data-aos="fade-up">
+                <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
+                    <div class="aspect-[3/4] overflow-hidden bg-stone-800">
+                        <img src="img/aram.jpeg" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                    </div>
+                    <div class="p-3 md:p-5">
+                        <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">Adeline S.</h3>
+                        <p class="text-[#C5A059] text-[8px] md:text-[10px] uppercase tracking-widest mt-0.5 md:mt-1 mb-2">Soprano</p>
+                        <p class="text-stone-400 text-[10px] md:text-sm font-light leading-relaxed line-clamp-2 md:line-clamp-none">Membawa kejernihan vokal sejak 2016.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-card alto" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
+                    <div class="aspect-[3/4] overflow-hidden bg-stone-800">
+                        <img src="img/katarina.jpg" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                    </div>
+                    <div class="p-3 md:p-5">
+                        <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">Maria Rossa</h3>
+                        <p class="text-[#C5A059] text-[8px] md:text-[10px] uppercase tracking-widest mt-0.5 md:mt-1 mb-2">Alto</p>
+                        <p class="text-stone-400 text-[10px] md:text-sm font-light leading-relaxed line-clamp-2">Kedalaman suara alto yang hangat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="member-card alto" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
+                    <div class="aspect-[3/4] overflow-hidden bg-stone-800">
+                        <img src="img/ressler.jpeg" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                    </div>
+                    <div class="p-3 md:p-5">
+                        <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">Maria Rossa</h3>
+                        <p class="text-[#C5A059] text-[8px] md:text-[10px] uppercase tracking-widest mt-0.5 md:mt-1 mb-2">Alto</p>
+                        <p class="text-stone-400 text-[10px] md:text-sm font-light leading-relaxed line-clamp-2">Kedalaman suara alto yang hangat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="member-card alto" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
+                    <div class="aspect-[3/4] overflow-hidden bg-stone-800">
+                        <img src="img/tom_keen.jpeg" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                    </div>
+                    <div class="p-3 md:p-5">
+                        <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">Maria Rossa</h3>
+                        <p class="text-[#C5A059] text-[8px] md:text-[10px] uppercase tracking-widest mt-0.5 md:mt-1 mb-2">Alto</p>
+                        <p class="text-stone-400 text-[10px] md:text-sm font-light leading-relaxed line-clamp-2">Kedalaman suara alto yang hangat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-card tenor" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
+                    <div class="aspect-[3/4] overflow-hidden bg-stone-800">
+                        <img src="img/katarina.jpg" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                    </div>
+                    <div class="p-3 md:p-5">
+                        <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">Maria Rossa</h3>
+                        <p class="text-[#C5A059] text-[8px] md:text-[10px] uppercase tracking-widest mt-0.5 md:mt-1 mb-2">Alto</p>
+                        <p class="text-stone-400 text-[10px] md:text-sm font-light leading-relaxed line-clamp-2">Kedalaman suara alto yang hangat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="member-card tenor" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
+                    <div class="aspect-[3/4] overflow-hidden bg-stone-800">
+                        <img src="img/liz_keen.jpeg" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                    </div>
+                    <div class="p-3 md:p-5">
+                        <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">Maria Rossa</h3>
+                        <p class="text-[#C5A059] text-[8px] md:text-[10px] uppercase tracking-widest mt-0.5 md:mt-1 mb-2">Alto</p>
+                        <p class="text-stone-400 text-[10px] md:text-sm font-light leading-relaxed line-clamp-2">Kedalaman suara alto yang hangat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-card bass" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
+                    <div class="aspect-[3/4] overflow-hidden bg-stone-800">
+                        <img src="img/rr.jpeg" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                    </div>
+                    <div class="p-3 md:p-5">
+                        <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">Maria Rossa</h3>
+                        <p class="text-[#C5A059] text-[8px] md:text-[10px] uppercase tracking-widest mt-0.5 md:mt-1 mb-2">Alto</p>
+                        <p class="text-stone-400 text-[10px] md:text-sm font-light leading-relaxed line-clamp-2">Kedalaman suara alto yang hangat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="member-card bass" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
+                    <div class="aspect-[3/4] overflow-hidden bg-stone-800">
+                        <img src="img/aram.jpeg" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                    </div>
+                    <div class="p-3 md:p-5">
+                        <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">Maria Rossa</h3>
+                        <p class="text-[#C5A059] text-[8px] md:text-[10px] uppercase tracking-widest mt-0.5 md:mt-1 mb-2">Alto</p>
+                        <p class="text-stone-400 text-[10px] md:text-sm font-light leading-relaxed line-clamp-2">Kedalaman suara alto yang hangat.</p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+
+        // Fungsi Filter
+        function filterSelection(category) {
+            const cards = document.getElementsByClassName("member-card");
+            const btns = document.getElementsByClassName("filter-btn");
+
+            // Update Active Button
+            for (let btn of btns) {
+                if (btn.innerText.toLowerCase() === category || (category === 'all' && btn.innerText === 'ALL')) {
+                    btn.classList.add("active");
+                } else {
+                    btn.classList.remove("active");
+                }
+            }
+
+            // Show/Hide Cards
+            for (let card of cards) {
+                if (category === "all" || card.classList.contains(category)) {
+                    card.classList.remove("hidden");
+                    // Refresh AOS agar animasi muncul kembali saat di-filter
+                    setTimeout(() => card.style.opacity = "1", 10);
+                } else {
+                    card.classList.add("hidden");
+                }
+            }
+            AOS.refresh();
+        }
+    </script>
+</body>
+</html>
