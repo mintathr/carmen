@@ -52,7 +52,8 @@ const members = [
         role: "tenor",
         desc: "Vokalis tenor dengan suara yang kuat dan ekspresif.",
         img: "img/tenor/Surya_Deo_Sindhunata.JPG",
-        posisi: "object-[center_90%]"
+        posisi: "object-[center_90%]",
+        customFont: "text-[10px] md:text-sm"
     },
     {
         name: "Mikael Septian",
@@ -73,7 +74,8 @@ const members = [
         role: "tenor",
         desc: "Vokalis tenor dengan suara yang kuat dan ekspresif.",
         img: "img/tenor/Bayu_R._Bonaventura.JPG",
-        posisi: "object-[center_90%]"
+        posisi: "object-[center_90%]",
+        customFont: "text-[10px] md:text-sm"
     },
     {
         name: "Yosua Mario",
@@ -117,7 +119,8 @@ const members = [
         name: "Herman Indrakusuma",
         role: "pianis",
         desc: "#",
-        img: "img/musician/Herman_Indrakusuma.JPG"
+        img: "img/musician/Herman_Indrakusuma.JPG",
+        customFont: "text-[10px] md:text-sm"
     },
     {
         name: "Edwin Djuhadi",
@@ -153,7 +156,7 @@ members.forEach((member, index) => {
                          class="w-full h-full object-cover ${member.posisi || 'object-center'} transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
                 </div>
                 <div class="p-3 md:p-5">
-                    <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">${member.name}</h3>
+                    <h3 class="${member.customFont || 'text-sm md:text-xl'} text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">${member.name}</h3>
                     <p class="text-[#C5A059] text-[8px] md:text-[10px] uppercase tracking-widest mt-0.5 md:mt-1 mb-2">${member.role}</p>
                 </div>
             </div>
