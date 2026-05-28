@@ -32,24 +32,29 @@
 
     <header class="py-12 md:py-20 px-6 text-center" data-aos="fade-down">
         <span class="text-[#C5A059] uppercase tracking-[0.4em] text-[10px] md:text-xs mb-3 block">Voices of Harmony</span>
-        <h1 class="text-3xl md:text-6xl font-serif text-[#F7E7CE]">The <span class="italic text-white">Choir</span> Members</h1>
+        <h1 class="text-3xl md:text-6xl font-serif text-[#F7E7CE]">Meet <span class="italic text-white">The</span> Team</h1>
     </header>
 
     <div class="max-w-7xl mx-auto px-6 mb-12 flex flex-wrap justify-center gap-2 md:gap-4" data-aos="fade-up">
         <button class="filter-btn active px-4 py-1.5 border border-stone-700 text-[10px] md:text-xs uppercase tracking-widest transition-all" onclick="filterSelection('all')">All</button>
-        <button class="filter-btn px-4 py-1.5 border border-stone-700 text-[10px] md:text-xs uppercase tracking-widest transition-all" onclick="filterSelection('soprano')">Soprano</button>
+        <button class="filter-btn px-4 py-1.5 border border-stone-700 text-[10px] md:text-xs uppercase tracking-widest transition-all" onclick="filterSelection('sopran')">Sopran</button>
         <button class="filter-btn px-4 py-1.5 border border-stone-700 text-[10px] md:text-xs uppercase tracking-widest transition-all" onclick="filterSelection('alto')">Alto</button>
         <button class="filter-btn px-4 py-1.5 border border-stone-700 text-[10px] md:text-xs uppercase tracking-widest transition-all" onclick="filterSelection('tenor')">Tenor</button>
         <button class="filter-btn px-4 py-1.5 border border-stone-700 text-[10px] md:text-xs uppercase tracking-widest transition-all" onclick="filterSelection('bass')">Bass</button>
     </div>
 
     <main class="max-w-7xl mx-auto px-4 md:px-6 pb-24">
+    <div id="gallery-container" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-8">
+        </div>
+</main>
+
+    <!-- <main class="max-w-7xl mx-auto px-4 md:px-6 pb-24">
         <div id="gallery-container" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-8">
             
             <div class="member-card soprano" data-aos="fade-up">
                 <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
                     <div class="aspect-[3/4] overflow-hidden bg-stone-800">
-                        <img src="img/liz_keen.jpeg" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                        <img src="img/sopran/stefany_valentia.JPG" loading="eager" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
                     </div>
                     <div class="p-3 md:p-5">
                         <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">Adeline S.</h3>
@@ -61,7 +66,7 @@
             <div class="member-card soprano" data-aos="fade-up">
                 <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
                     <div class="aspect-[3/4] overflow-hidden bg-stone-800">
-                        <img src="img/rr.jpeg" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                        <img src="img/rr.jpeg" loading="eager" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
                     </div>
                     <div class="p-3 md:p-5">
                         <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">Adeline S.</h3>
@@ -73,7 +78,7 @@
             <div class="member-card soprano" data-aos="fade-up">
                 <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
                     <div class="aspect-[3/4] overflow-hidden bg-stone-800">
-                        <img src="img/aram.jpeg" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                        <img src="img/aram.jpeg" loading="eager" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
                     </div>
                     <div class="p-3 md:p-5">
                         <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">Adeline S.</h3>
@@ -86,7 +91,7 @@
             <div class="member-card alto" data-aos="fade-up" data-aos-delay="100">
                 <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
                     <div class="aspect-[3/4] overflow-hidden bg-stone-800">
-                        <img src="img/katarina.jpg" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                        <img src="img/katarina.jpg" loading="eager" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
                     </div>
                     <div class="p-3 md:p-5">
                         <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">Maria Rossa</h3>
@@ -110,7 +115,7 @@
             <div class="member-card alto" data-aos="fade-up" data-aos-delay="100">
                 <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
                     <div class="aspect-[3/4] overflow-hidden bg-stone-800">
-                        <img src="img/tom_keen.jpeg" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                        <img src="img/tom_keen.jpeg" loading="lazy" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
                     </div>
                     <div class="p-3 md:p-5">
                         <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">Maria Rossa</h3>
@@ -123,7 +128,7 @@
             <div class="member-card tenor" data-aos="fade-up" data-aos-delay="100">
                 <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
                     <div class="aspect-[3/4] overflow-hidden bg-stone-800">
-                        <img src="img/katarina.jpg" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                        <img src="img/katarina.jpg" loading="lazy" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
                     </div>
                     <div class="p-3 md:p-5">
                         <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">Maria Rossa</h3>
@@ -135,7 +140,7 @@
             <div class="member-card tenor" data-aos="fade-up" data-aos-delay="100">
                 <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
                     <div class="aspect-[3/4] overflow-hidden bg-stone-800">
-                        <img src="img/liz_keen.jpeg" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                        <img src="img/liz_keen.jpeg" loading="lazy" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
                     </div>
                     <div class="p-3 md:p-5">
                         <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">Maria Rossa</h3>
@@ -148,7 +153,7 @@
             <div class="member-card bass" data-aos="fade-up" data-aos-delay="100">
                 <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
                     <div class="aspect-[3/4] overflow-hidden bg-stone-800">
-                        <img src="img/rr.jpeg" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                        <img src="img/rr.jpeg" loading="lazy" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
                     </div>
                     <div class="p-3 md:p-5">
                         <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">Maria Rossa</h3>
@@ -160,7 +165,7 @@
             <div class="member-card bass" data-aos="fade-up" data-aos-delay="100">
                 <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
                     <div class="aspect-[3/4] overflow-hidden bg-stone-800">
-                        <img src="img/aram.jpeg" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                        <img src="img/aram.jpeg" loading="lazy" alt="Member" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
                     </div>
                     <div class="p-3 md:p-5">
                         <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">Maria Rossa</h3>
@@ -171,7 +176,7 @@
             </div>
 
             </div>
-    </main>
+    </main> -->
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -208,5 +213,6 @@
             AOS.refresh();
         }
     </script>
+    <script src="js/list_choirs.js"></script>
 </body>
 </html>
