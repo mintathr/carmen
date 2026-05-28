@@ -1,25 +1,25 @@
 const members = [
     {
         name: "Stefany Valentia.",
-        role: "Sopran",
+        role: "Soprano",
         desc: "Membawa kejernihan vokal sejak 2016.",
         img: "img/sopran/stefany_valentia.JPG"
     },
     {
-        name: "Belinda Widodo",
-        role: "Sopran",
-        desc: "Vokalis utama dalam konser tahunan 2023.",
-        img: "img/sopran/belinda_widodo.JPG"
-    },
-    {
         name: "Gitta Nathania",
-        role: "Sopran",
+        role: "Soprano",
         desc: "Penyanyi dengan suara yang lembut dan penuh emosi.",
         img: "img/sopran/gitta_nathania.JPG"
     },
     {
+        name: "Belinda Widodo",
+        role: "Soprano",
+        desc: "Vokalis utama dalam konser tahunan 2023.",
+        img: "img/sopran/belinda_widodo.JPG"
+    },
+    {
         name: "Michelle Fauziek",
-        role: "Sopran",
+        role: "Soprano",
         desc: "Penyanyi dengan suara yang lembut dan penuh emosi.",
         img: "img/sopran/michelle_fauziek.JPG"
     },
@@ -30,28 +30,22 @@ const members = [
         img: "img/alto/Bernadine_Thendean.JPG"
     },
     {
-        name: "Brigitta Sthefynna",
-        role: "Alto",
-        desc: "Kedalaman suara alto yang hangat.",
-        img: "img/alto/Brigitta_Sthefynna.JPG"
-    },
-    {
         name: "Cheryll Veriena",
         role: "Alto",
         desc: "Kedalaman suara alto yang hangat.",
         img: "img/alto/Cheryll_Veriena.JPG"
     },
     {
-        name: "Bayu R. BonaventuraLiam T.",
-        role: "tenor",
-        desc: "Vokalis tenor dengan suara yang kuat dan ekspresif.",
-        img: "img/tenor/Bayu_R._Bonaventura.JPG"
+        name: "Brigitta Sthefynna",
+        role: "Alto",
+        desc: "Kedalaman suara alto yang hangat.",
+        img: "img/alto/Brigitta_Sthefynna.JPG"
     },
     {
-        name: "Mario Viegar",
+        name: "Surya Deo Sindhunata",
         role: "tenor",
         desc: "Vokalis tenor dengan suara yang kuat dan ekspresif.",
-        img: "img/tenor/Mario_Viegar.JPG"
+        img: "img/tenor/Surya_Deo_Sindhunata.JPG"
     },
     {
         name: "Septian E. Santoso",
@@ -60,10 +54,22 @@ const members = [
         img: "img/tenor/Septian_E._Santoso.JPG"
     },
     {
-        name: "Surya Deo Sindhunata",
+        name: "Mario Viegar",
         role: "tenor",
         desc: "Vokalis tenor dengan suara yang kuat dan ekspresif.",
-        img: "img/tenor/Surya_Deo_Sindhunata.JPG"
+        img: "img/tenor/Mario_Viegar.JPG"
+    },
+    {
+        name: "Bayu R. Bonaventura",
+        role: "tenor",
+        desc: "Vokalis tenor dengan suara yang kuat dan ekspresif.",
+        img: "img/tenor/Bayu_R._Bonaventura.JPG"
+    },
+    {
+        name: "Yudhanto Koerniawan",
+        role: "bass",
+        desc: "Suara bass yang mendalam dan penuh karakter.",
+        img: "img/bass/Yudhanto_Koerniawan.JPG"
     },
     {
         name: "Nikolas Aryaputra",
@@ -78,12 +84,30 @@ const members = [
         img: "img/bass/William_Rusaidy.JPG"
     },
     {
-        name: "Yudhanto Koerniawan",
-        role: "bass",
-        desc: "Suara bass yang mendalam dan penuh karakter.",
-        img: "img/bass/Yudhanto_Koerniawan.JPG"
+        name: "Pricilia C. Pattynama",
+        role: "musician",
+        desc: "#",
+        img: "img/musician/Pricilia_C._Pattynama.JPG"
     },
-    
+    {
+        name: "Herman Indrakusuma",
+        role: "musician",
+        desc: "#",
+        img: "img/musician/Herman_Indrakusuma.JPG"
+    },
+    {
+        name: "Reinaldo C. Santoso",
+        role: "musician",
+        desc: "#",
+        img: "img/musician/Reinaldo_C._Santoso.JPG"
+    },
+    {
+        name: "Edwin Djuhadi",
+        role: "musician",
+        desc: "#",
+        img: "img/musician/Edwin_Djuhadi.JPG"
+    },
+
 ];
 
 const container = document.getElementById('gallery-container');
@@ -102,11 +126,11 @@ members.forEach((member, index) => {
                          alt="${member.name}" 
                          class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
                 </div>
-                <!--<div class="p-3 md:p-5">
+                <div class="p-3 md:p-5">
                     <h3 class="text-[#F7E7CE] font-serif text-sm md:text-xl tracking-wide">${member.name}</h3>
                     <p class="text-[#C5A059] text-[8px] md:text-[10px] uppercase tracking-widest mt-0.5 md:mt-1 mb-2">${member.role}</p>
-                    <p class="text-stone-400 text-[10px] md:text-sm font-light leading-relaxed line-clamp-2 md:line-clamp-none">${member.desc}</p>
-                </div>-->
+                    <!--<p class="text-stone-400 text-[10px] md:text-sm font-light leading-relaxed line-clamp-2 md:line-clamp-none">${member.desc}</p>-->
+                </div>
             </div>
         </div>
     `;
