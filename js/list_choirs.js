@@ -1,6 +1,6 @@
 const members = [
     {
-        name: "Stefany Valentia.",
+        name: "Stefany Valentia",
         role: "Soprano",
         desc: "Membawa kejernihan vokal sejak 2016.",
         img: "img/sopran/stefany_valentia.JPG"
@@ -24,7 +24,7 @@ const members = [
         img: "img/sopran/michelle_fauziek.JPG"
     },
     {
-        name: "Bernadine Thendean",
+        name: "Nadine Thendean",
         role: "Alto",
         desc: "Kedalaman suara alto yang hangat.",
         img: "img/alto/Bernadine_Thendean.JPG"
@@ -36,7 +36,7 @@ const members = [
         img: "img/alto/Cheryll_Veriena.JPG"
     },
     {
-        name: "Brigitta Sthefynna",
+        name: "Sthefynna",
         role: "Alto",
         desc: "Kedalaman suara alto yang hangat.",
         img: "img/alto/Brigitta_Sthefynna.JPG"
@@ -48,7 +48,7 @@ const members = [
         img: "img/tenor/Surya_Deo_Sindhunata.JPG"
     },
     {
-        name: "Septian E. Santoso",
+        name: "Mikael Septian",
         role: "tenor",
         desc: "Vokalis tenor dengan suara yang kuat dan ekspresif.",
         img: "img/tenor/Septian_E._Santoso.JPG"
@@ -66,7 +66,13 @@ const members = [
         img: "img/tenor/Bayu_R._Bonaventura.JPG"
     },
     {
-        name: "Yudhanto Koerniawan",
+        name: "Yosua Mario",
+        role: "tenor",
+        desc: "Vokalis tenor dengan suara yang kuat dan ekspresif.",
+        img: "img/tenor/Yosua_Mario.JPG"
+    },
+    {
+        name: "Yudhanto Kurniawan P.",
         role: "bass",
         desc: "Suara bass yang mendalam dan penuh karakter.",
         img: "img/bass/Yudhanto_Koerniawan.JPG"
@@ -84,10 +90,16 @@ const members = [
         img: "img/bass/William_Rusaidy.JPG"
     },
     {
-        name: "Pricilia C. Pattynama",
+        name: "Pricilia Claudia",
         role: "musician",
         desc: "#",
         img: "img/musician/Pricilia_C._Pattynama.JPG"
+    },
+    {
+        name: "Rex Reinaldo",
+        role: "musician",
+        desc: "#",
+        img: "img/musician/Reinaldo_C._Santoso.JPG"
     },
     {
         name: "Herman Indrakusuma",
@@ -96,14 +108,8 @@ const members = [
         img: "img/musician/Herman_Indrakusuma.JPG"
     },
     {
-        name: "Reinaldo C. Santoso",
-        role: "musician",
-        desc: "#",
-        img: "img/musician/Reinaldo_C._Santoso.JPG"
-    },
-    {
         name: "Edwin Djuhadi",
-        role: "musician",
+        role: "principal of string departmen",
         desc: "#",
         img: "img/musician/Edwin_Djuhadi.JPG"
     },
@@ -116,9 +122,11 @@ const container = document.getElementById('gallery-container');
 members.forEach((member, index) => {
     // Gunakan 'eager' untuk 2 foto pertama, sisanya 'lazy'
     const loadingStrategy = index < 4 ? 'eager' : 'lazy';
+    // Mengubah semua spasi menjadi tanda hubung
+    const roleClass = member.role.toLowerCase().replace(/\s+/g, '-');
 
     container.innerHTML += `
-        <div class="member-card ${member.role.toLowerCase()}" data-aos="fade-up">
+        <div class="member-card ${roleClass}" data-aos="fade-up">
             <div class="bg-stone-900/40 border border-stone-800 overflow-hidden rounded-sm transition-all duration-500 hover:border-[#C5A059]/50 group">
                 <div class="aspect-[3/4] overflow-hidden bg-stone-800">
                     <img src="${member.img}" 
