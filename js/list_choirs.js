@@ -53,7 +53,7 @@ const members = [
         desc: "Vokalis tenor dengan suara yang kuat dan ekspresif.",
         img: "img/tenor/Surya_Deo_Sindhunata.JPG",
         posisi: "object-[center_90%]",
-        customFont: "text-[10px] md:text-sm"
+        customFont: "text-[8px] md:text-sm"
     },
     {
         name: "Mikael Septian",
@@ -75,7 +75,7 @@ const members = [
         desc: "Vokalis tenor dengan suara yang kuat dan ekspresif.",
         img: "img/tenor/Bayu_R._Bonaventura.JPG",
         posisi: "object-[center_90%]",
-        customFont: "text-[10px] md:text-sm"
+        customFont: "text-[8px] md:text-sm"
     },
     {
         name: "Yosua Mario",
@@ -88,7 +88,8 @@ const members = [
         role: "bass",
         desc: "Suara bass yang mendalam dan penuh karakter.",
         img: "img/bass/Yudhanto_Koerniawan.JPG",
-        posisi: "object-[center_105%]"
+        posisi: "object-[center_105%]",
+        customFont: "text-[8px] md:text-sm"
     },
     {
         name: "Nikolas Aryaputra",
@@ -120,7 +121,7 @@ const members = [
         role: "pianis",
         desc: "#",
         img: "img/musician/Herman_Indrakusuma.JPG",
-        customFont: "text-[10px] md:text-sm"
+        customFont: "text-[8px] md:text-sm"
     },
     {
         name: "Edwin Djuhadi",
